@@ -1,0 +1,124 @@
+:root {
+    --animate-delay: .2s;
+}
+body {
+    font-family: 'Heebo', sans-serif;
+}
+.text-primary-1, 
+.btn-link-1 {
+    color: #06BBCC;
+}
+.btn-primary-1, 
+.bg-primary-1 {
+    font-family: 'Nunito', sans-serif;
+    background-color: #06BBCC;
+    color: #fff;
+    border-radius: 0px;
+}
+.btn-primary-1:hover {
+    background-color: #07cfe1;
+    color: #fff;
+}
+
+/* NAVBAR */
+.nav-link {
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.nav-link:hover {
+    color: #07cfe1;
+}
+
+/* CAROUSEL */
+.carousel-inner .filtro {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(24, 29, 56, .7);
+}
+.carousel-inner h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.carousel-inner p {
+    color: red;
+    display: none;
+}
+
+/* SERVIÇOS */
+.service-item {
+    background-color: #f7f7f7;
+    transition: .5s;
+}
+.service-item:hover {
+    background-color: #06BBCC;
+    color: #fff;
+}
+.service-item:hover i {
+    color: #fff;
+}
+
+/* ABOUT */
+#about .img {
+    min-height: 400px;
+}
+#about .img img,
+#category .img img {
+    object-fit: cover;
+}
+
+/* CATEGORIAS */
+#category img, 
+.course-item img, 
+#team .team-item img {
+    transition: .5s;
+}
+#category img:hover, 
+.course-item img:hover,
+#team .team-item:hover img  {
+    transform: scale(1.1);
+}
+
+/* FOOTER */
+.footer-menu a {
+    color: #06BBCC;
+    text-decoration: none;
+}
+.footer-menu a:hover {
+    color: #07cfe1;
+}
+
+/* HEADER TOP */
+#header-top {
+    background-image: url('../img/carousel-1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: inset 0 0 0 10000px rgba(24, 29, 56, .7);
+}
+#header-top h1 {
+    font-weight: bold;
+}
+#not-found h1 {
+    font-weight: bold;
+}
+
+
+@media (min-width: 768px) {
+    .carousel-inner h1 {
+        font-size: 3.5rem;
+    }
+    .carousel-item p {
+        display: block;
+    }
+}
+@media (min-width: 576px) {
+    .carousel-inner h1 {
+        font-size: 2rem;
+    }
+    .carousel-item p {
+        display: block;
+    }
+}
